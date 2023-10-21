@@ -24,6 +24,7 @@ export const theme = {
     indigo: "#4263Eb",
     purple: "#7E5CEF",
     pink: "#FE5895",
+    metalDark: '#7f8c8d',
     gray100: "#FAFAFA",
     gray200: "#E9ECEF",
     gray300: "#DEE2E6",
@@ -33,8 +34,13 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
+    black999: "#191919",
     primary: "#F83600",
     secondary: "#FE8C00",
+    container: "#2d2d2d",
+    title: '#fff',
+    light: '#ecf0f1',
+    champagneDark: '#bdc3c7'
   },
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
@@ -42,17 +48,25 @@ export const theme = {
     mono: ["IBM Plex Mono", "serif"].join(","),
   },
   fontSize: {
-    xs: rem(10),
-    sm: rem(12),
-    md: rem(14),
-    base: rem(16),
-    lg: rem(18),
-    xl: rem(20),
+    small: '.8rem',
+    normal: '1rem',
+    large: '1.2rem',
+    title: '1.3rem',
+    subtitle: '1.05rem',
+
+  },
+  breakpoints: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+    xxl: '1400px',
     "2xl": rem(24),
     "3xl": rem(32),
     "4xl": rem(40),
     "5xl": rem(64),
-  },
+  }
 };
 
 export function Theme({ children }) {
